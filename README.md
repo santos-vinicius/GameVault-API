@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/social-preview-dark-1.png" alt="GameVault API — Java, Spring Boot, Oracle e Docker" width="70%">
+  <img src="assets/social-preview-dark-1.png" alt="GameVault API — Java, Spring Boot, Oracle e Docker" width="100%" height="500">
 </p>
 
 # GameVault API
