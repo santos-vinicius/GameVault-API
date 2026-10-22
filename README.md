@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/social-preview-dark-1.png" alt="GameVault API — Java, Spring Boot, Oracle e Docker" width="70%">
+</p>
+
 # GameVault API
 
 [![Java](https://img.shields.io/badge/Java-25-orange?logo=openjdk&logoColor=white)](https://www.oracle.com/java/technologies/downloads/)
