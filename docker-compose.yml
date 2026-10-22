@@ -1,0 +1,21 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:23-slim-faststart
+    container_name: gamevault-oracle
+    environment:
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD:-local-oracle-password}
+      APP_USER: gamevault
+      APP_USER_PASSWORD: ${APP_USER_PASSWORD:-local-gamevault-password}
+    ports:
+      - "1521:1521"
+    volumes:
+      - gamevault-oracle-data:/opt/oracle/oradata
+    healthcheck:
+      test: ["CMD-SHELL", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+
+volumes:
+  gamevault-oracle-data:
