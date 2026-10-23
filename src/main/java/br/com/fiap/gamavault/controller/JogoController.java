@@ -28,6 +28,11 @@ public class JogoController {
         return ResponseEntity.created(uri).body(jogo);
     }
 
+    @PostMapping("/lote")
+    public ResponseEntity<?> cadastrarLista(@RequestBody List<Jogo> jogos) {
+        return ResponseEntity.ok(jogoService.salvarTodos(jogos));
+    }
+
     @GetMapping
     public List<Jogo> listar(){
         return jogoService.listar();
