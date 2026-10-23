@@ -9,3 +9,5 @@ public interface JogoRepository extends JpaRepository<Jogo, Long> {
 
     boolean existsByTituloIgnoreCaseAndCodigoNot(String titulo, Long codigo);
 }
+
+

@@ -55,4 +55,8 @@ public class JogoService {
         if (!jogoRepository.existsById(id))
             throw new EntidadeNaoEncontradaException("Jogo não encontrado");
     }
+
+    public List<Jogo> salvarTodos(List<Jogo> jogos) {
+        return jogoRepository.saveAll(jogos);
+    }
 }
